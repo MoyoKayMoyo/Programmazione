@@ -103,7 +103,7 @@ func drawCard(deck Deck)(GameCard, Deck, error){
 }
 
 func returnCard(deck Deck, last GameCard) (Deck, error){
-	if deck.numCards <= 40{
+	if deck.numCards < 40{
 		deck.cards = append(deck.cards, last)
 		deck.numCards++
 		return deck, nil
