@@ -114,11 +114,7 @@ func returnCard(deck Deck, last GameCard) (Deck, error){
 func printDeck(text string, deck Deck){
 	Println(text)
 	for i := 0; i < len(deck.cards); i=i+2{
-		if i%20 != 0 && i+1 != len(deck.cards){
-			Print(deck.cards[i], " ", deck.cards[i+1])
-		} else if i+1 == len(deck.cards){
-			Print(deck.cards[i])
-		}
+		Print(deck.cards[i], " ", deck.cards[i+1])
 		Println()
 	}
 }
