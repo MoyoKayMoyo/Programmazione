@@ -32,5 +32,5 @@ func comune(num1, num2 []int) (com []int){			//funzione che prende due slice di 
 			}
 		}
 	}
-	return
+	return		//return array elementi comuni
 }
